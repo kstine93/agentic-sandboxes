@@ -56,14 +56,14 @@ SANDBOX_DIR=$HOME/dev/kstine93/agentic-sandboxes
 
 
 # Create sandbox from kit template (no mounted file):
-sbx create \
+sbx run \
     --memory=16g \
     --cpus=2 \
     $SANDBOX_DIR/kits/copilot/ \
     --name $SANDBOX_NAME \
-    --kit $SANDBOX_DIR/mixins/software-craftsman \ # Sandbox mixin
-    --kit $SANDBOX_DIR/mixins/python-programmer \ # Sandbox mixin
+    --kit $SANDBOX_DIR/mixins/software-craftsman \
+    --kit $SANDBOX_DIR/mixins/python-programmer \
+    --clone $GIT_REPO
 
-sbx run --name $SANDBOX_NAME --clone $GIT_REPO
 
 ```
