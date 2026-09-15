@@ -1,7 +1,7 @@
 schemaVersion: "2"
 kind: mixin
-name: python-software-craftsman
+name: python-programmer
 version: "0.1.0"
-displayName: Python Software Craftsman
+displayName: Python Programmer
 description: Skill Set for writing good Python code & providing feedback on existing code
 
